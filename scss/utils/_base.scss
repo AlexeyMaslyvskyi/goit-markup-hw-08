@@ -1,0 +1,55 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset (50%);
+  margin: -1px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: $white;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 94px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+header {
+  border-bottom: 1px solid $border;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+.conteiner {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 15px;
+}

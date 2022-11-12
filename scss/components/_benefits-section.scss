@@ -1,0 +1,37 @@
+.benefits__list {
+  display: flex;
+
+  text-align: center;
+
+  .benefits__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.benefits__background {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $memberbgc;
+  border-radius: 4px;
+}
+.benefits__title {
+  margin-bottom: 10px;
+  line-height: 1.14;
+  text-align: left;
+
+  text-transform: uppercase;
+
+  color: $text;
+}
+.benefits__text {
+  text-align: left;
+  line-height: 1.71;
+  /* or 171% */
+
+  color: $grey;
+}

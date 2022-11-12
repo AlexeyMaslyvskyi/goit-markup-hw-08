@@ -1,0 +1,31 @@
+.clients {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text;
+  margin-bottom: 50px;
+}
+.clients__list {
+  gap: 30px;
+  display: flex;
+  .clients__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icons;
+    fill: $icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent;
+      fill: $accent;
+    }
+  }
+}
