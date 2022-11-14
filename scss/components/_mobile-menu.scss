@@ -16,5 +16,97 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    border: none;
+    background-color: $white;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      fill: $accent;
+    }
   }
+}
+.nav-menu__list {
+  position: absolute;
+  margin-top: 48px;
+}
+
+.nav-menu__item {
+  margin-left: 40px;
+  margin-bottom: 32px;
+}
+
+.nav-menu__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: $text;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+.nav-menu__link--current {
+  color: $accent;
+}
+
+.contacts-menu {
+  position: absolute;
+  bottom: 102px;
+  left: 40px;
+}
+.contacts-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.contacts-menu__tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  color: $grey;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+.contacts-menu__mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: $grey;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.socials-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 48px;
+  left: 40px;
+}
+.socials-menu__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  /* identical to box height, or 122% */
+
+  letter-spacing: 0.02em;
+  padding: 0 10px;
+  color: $accent;
+}
+
+.socials-menu > .socials-menu__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
