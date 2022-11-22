@@ -4,9 +4,13 @@
 }
 
 .footer__conteiner {
-  display: flex;
-  max-width: 1200px;
-
+  display: block;
+  width: 100%;
+  text-align: center;
+  @media (min-width: 480px) {
+    display: flex;
+    text-align: left;
+  }
   .logo__footer {
     display: block;
     margin-bottom: 20px;
@@ -20,6 +24,9 @@
     /* identical to box height */
 
     color: $white;
+  }
+  .web__logo {
+    color: $accent;
   }
 
   .contacts__footer:not(:last-child) {
@@ -45,11 +52,14 @@
 }
 
 .social__contacts {
-  display: flex;
+  display: block;
   justify-content: flex-start;
   flex-direction: column;
   padding-left: 70px;
   padding-top: 12px;
+  @media (min-width: 480px) {
+    display: flex;
+  }
 
   .social__title {
     margin-bottom: 20px;
@@ -66,8 +76,11 @@
 
 .social__list {
   display: flex;
-  justify-content: center;
+
   gap: 10px;
+  @media (min-width: 480px) {
+    justify-content: center;
+  }
 
   .social__link {
     width: 44px;
@@ -89,7 +102,7 @@
 
 .sign-distribution {
   padding-top: 12px;
-  padding-left: 93px;
+  // padding-left: 93px;
 
   .distribution {
     font-weight: 700;
