@@ -1,5 +1,9 @@
 .our-works {
+  display: none;
   padding-top: 0;
+  @media (min-width: 1200px) {
+    display: block;
+  }
 
   .works__title {
     margin-bottom: 50px;
