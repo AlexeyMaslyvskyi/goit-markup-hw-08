@@ -5,6 +5,13 @@
   font-size: 16px;
 
   .filters__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 15px;
+    column-gap: 8px;
+    margin-bottom: 40px;
     @media (min-width: 480px) {
       flex-direction: row;
       flex-basis: calc((100% - 32px) / 4);
