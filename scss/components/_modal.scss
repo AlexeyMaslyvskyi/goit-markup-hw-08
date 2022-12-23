@@ -148,7 +148,6 @@
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  margin:30px 125px;
 
   position: absolute;
   bottom: 40px;
@@ -165,6 +164,10 @@
   letter-spacing: 0.06em;
   color: $white;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media (min-width: 768px) and (max-width: 1200px) {
+    position: static;
+    margin: 0 auto;
+  }
 
   &:hover,
   &:focus {
