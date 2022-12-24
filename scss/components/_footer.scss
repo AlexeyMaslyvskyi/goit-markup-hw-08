@@ -7,6 +7,9 @@
   display: block;
   width: 100%;
   text-align: center;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
   @media (min-width: 480px) {
     display: flex;
     text-align: center;
@@ -14,9 +17,9 @@
   @media (max-width: 768px) {
     text-align: center;
     flex-direction: row;
-
-    flex-wrap: wrap;
-    justify-content: space-around;
+  }
+  @media (min-width: 1200px) {
+    text-align: left;
   }
   .logo__footer {
     display: block;
